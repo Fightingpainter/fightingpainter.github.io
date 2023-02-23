@@ -1,24 +1,203 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Fightingpainter</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Rafisa Administration    </title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css?v=0017">
+    <link rel="stylesheet" href="print.css?v=0004" media="print" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="app.js?v=0005"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <h1>PLEASE ENTER YOUR NAME</h1>
-    <div>
-        <form class="w3-spin">
-            <input type="input" ></input>
-            </br>
-            </br>
-            <button> Submit </button>
-        </form>
+    <div style="margin:1rem 0 0 1rem;">
+    <form action=" /entertainment" method="post" class="no-print">
+        <input type="image" src="logo.png" alt="Logo" name="resetUser" />
+    </form>
+</div>
+
+        <div style="display:flex; margin:1rem 0.5rem; gap:1rem;">
+            
+<div id="navbar" class="w3-bar-block w3-light-grey no-print"
+    style="height:fit-content; width:auto;">
+
+    <a class="w3-bar-item w3-button w3-padding-8 ">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-solid fa-house-chimney"></i></div>
+            <div>
+                Homepage            </div>
+        </div>
+    </a>
+
+    <a class="w3-bar-item w3-button w3-padding-8 ">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-solid fa-user-group"></i></div>
+            <div>
+                Employees            </div>
+        </div>
+    </a>
+
+    <a class="w3-bar-item w3-button w3-padding-8 ">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-regular fa-calendar"></i></div>
+            <div>
+                Planning            </div>
+        </div>
+    </a>
+
+    <hr>
+
+    
+    <a class="w3-bar-item w3-button w3-padding-8 other-user">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-regular fa-calendar-days"></i></div>
+            <div>
+                Presence times            </div>
+        </div>
+    </a>
+
+    <a class="w3-bar-item w3-button w3-padding-8 other-user">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-solid fa-umbrella-beach"></i></div>
+            <div>
+                Holiday&nbsp;balance            </div>
+        </div>
+    </a>
+
+    <a class="w3-bar-item w3-button w3-padding-8 other-user">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-solid fa-user-astronaut"></i></div>
+            <div>
+                User&nbsp;data            </div>
+        </div>
+    </a>
+
+    <a class="w3-bar-item w3-button w3-padding-8 other-user">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-solid fa-percent"></i></div>
+            <div>
+                Workload            </div>
+        </div>
+    </a>
+
+    <a class="w3-bar-item w3-button w3-padding-8 other-user">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-solid fa-gear"></i></div>
+            <div>
+                Settings            </div>
+        </div>
+    </a>
+
+    <hr>
+
+    <a class="w3-bar-item w3-button w3-padding-8 ">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-solid fa-gift"></i></div>
+            <div>
+                Public&nbsp;holidays            </div>
+        </div>
+    </a>
+
+    <a class="w3-bar-item w3-button w3-padding-8 ">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-solid fa-clipboard"></i></div>
+            <div>
+                Projects            </div>
+        </div>
+    </a>
+
+    <a class="w3-bar-item w3-button w3-padding-8 w3-blue-grey ">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-solid fa-chess"></i></div>
+            <div>
+                Entertainment            </div>
+        </div>
+    </a>
+
+    <a  class="w3-bar-item w3-button w3-padding-8 ">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-solid fa-info"></i></div>
+            <div>
+                FAQ            </div>
+        </div>
+    </a>
+
+    <hr>
+
+    <div class="w3-bar-item w3-button w3-padding-8" onclick="logout()">
+        <div class="menu-item">
+            <div style="text-align:center;"><i class="fa-solid fa-right-from-bracket"></i></div>
+            <div>
+                Log out            </div>
+        </div>
     </div>
+
+            <div id="navbarToggle" onclick="toggleNavbar()" class="w3-bar-item w3-button w3-padding-8" style="margin-top:3rem;">
+            <i class="fa-solid fa-angles-left"></i>
+        </div>
     
-    
-</body>
+</div>
+
+
+<script>
+    fetch('api_getNavBarToggle.php')
+        .then(response => response.text())
+        .then((data) => navbarCollapse = parseInt(data));
+
+    function toggleNavbar() {
+        navbarCollapse = 1 - navbarCollapse;
+        fetch('api_setNavBarToggle.php?onoff=' + navbarCollapse);
+        console.log(navbarCollapse);
+        if (navbarCollapse == 1) {
+            document.getElementById('navbar').style.width = '2.5rem';
+            document.getElementById('navbarToggle').innerHTML = '<i class="fa-solid fa-angles-right"></i>';
+        } else {
+            document.getElementById('navbar').style.width = 'auto';
+            document.getElementById('navbarToggle').innerHTML = '<i class="fa-solid fa-angles-left"></i>';
+        }
+    }
+</script>
+<style>
+    .game-menu-img {
+        border: solid 2px #2196F3;
+        border-radius: 24px;
+        width: 7rem;
+    }
+
+    .game-menu-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+    }
+
+    .highscore-table {
+        display: grid;
+        gap: 0.1rem;
+        grid-template-columns: auto auto auto auto auto auto;
+        border: solid 1px grey;
+        background-color: grey;
+        margin-top: 1rem;
+    }
+
+    .highscore-table div {
+        background-color: white;
+        padding: 0.1rem 0.3rem;
+    }
+</style>
+
+            </div>
+        </div>
+        </body>
+
 </html>
+
