@@ -2,25 +2,50 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Rafisa Administration    </title>
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="style.css?v=0017">
-    <link rel="stylesheet" href="print.css?v=0004" media="print" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="app.js?v=0005"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-</head>
+    <head>
+        <title>Proof of Concept</title>
+        <style>
+            #enlargingImg {
+                display: block;
+                transition: all 0.1s ease-in-out;
+                width: 200px;
+            }
+        
+            #enlargingImg:hover {
+                width: 250px;
+            }
+        
+            #enlargingImg:active {
+                width: 200px;
+            }
+        </style>
+    </head>
 
-<body>
-    <div style="margin:1rem 0 0 1rem;">
-        <img type="image" src="logo.png" alt="Logo">
-    </div>
-    <img type="image" src="SideBar.png" alt="SideBar" width="157.03" height="604.4"> 
-</body>
+    <body>
+        <div style="margin:1rem 0 0 1rem;">
+            <img type="image" src="logo.png" alt="Logo">
+        </div>
+        <img type="image" src="SideBar.png" alt="SideBar" width="157.03" height="604.4">
+        
+
+
+        <img id="enlargingImg" src="./Pictures/player.png" alt="Player">
+        <img id="BG" src="./Pictures/map.png" alt="BG">
+        <script>
+            const image = document.getElementById('enlargingImg');
+
+                image.addEventListener('mousedown', () => {
+                image.style.transform = 'scale(1)';
+                });
+
+                image.addEventListener('mouseup', () => {
+                image.style.transform = 'scale(1.1)';
+                });
+
+                image.addEventListener('mouseleave', () => {
+                image.style.transform = 'scale(1)';
+                });
+          </script>
+        
+    </body>
+</html>
